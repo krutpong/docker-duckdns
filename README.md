@@ -8,7 +8,7 @@ This docker image is available as a [trusted build on the docker index](https://
 
 Run:
 
-`sudo docker run --name=duckdns --restart always -d -e "ENV_DOMAIN=domain" -e "ENV_TOKEN=token" robinwl/duckdns`
+`sudo docker run --name=duckdns --restart always -d -e "ENV_DOMAIN=domain" -e "ENV_TOKEN=token" sark/duckdns`
 
 To check the status, run `docker logs duckdns`.
 
