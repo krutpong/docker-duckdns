@@ -1,0 +1,16 @@
+version: '3'
+
+# Define services
+services:
+
+  # App Service
+  duckdns:
+    # Configuration for building the docker image for the service
+    build:
+      context: . # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: Dockerfile
+    environment:
+      - ENV_DOMAIN=yourdomain.duckdns.org
+      - ENV_TOKEN=yourtoken
+    network_mode: bridge    
+    restart: always
