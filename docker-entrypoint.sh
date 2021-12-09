@@ -9,7 +9,7 @@ if [ -z "$ENV_TOKEN" ] ; then
     echo "Missing environment variable: ENV_TOKEN"
 	exit 1;
 fi
-
+https://github.com/krutpong/docker-duckdns/blob/master/docker-entrypoint.sh
 current=""
 while true; do
 	echo ""
@@ -23,7 +23,7 @@ while true; do
 		current=$latest
 		echo url="https://www.duckdns.org/update?domains=$ENV_DOMAIN&token=$ENV_TOKEN&ip=" | curl -sk -K -
 	fi
-	sleep 5m
+	sleep 30s
 done
 
 
