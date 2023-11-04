@@ -9,7 +9,7 @@ if [ -z "$ENV_TOKEN" ] ; then
     echo "Missing environment variable: ENV_TOKEN"
 	exit 1;
 fi
-https://github.com/krutpong/docker-duckdns/blob/master/docker-entrypoint.sh
+
 current=""
 while true; do
 	echo ""
